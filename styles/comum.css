@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}

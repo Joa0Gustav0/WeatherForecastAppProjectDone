@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/comum.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="shortcut icon" href="media/logo-picture.ico" type="image/x-icon">
+    <title>Weather Together | Weather Forecast App</title>
+</head>
+<body class="mode-changeable">
+    <div class="container" id="home">
+        <section class="results-container containers mode-changeable">
+            <main class="results-container__main mode-changeable">
+                <img src="media/logo-picture.png" alt="weather-together-logo" class="results-container__main__logo-picture logos">
+                <div class="results-container__main__main-info">
+                    <h1 class="results-container__main__city-name">
+                        ---
+                    </h1>
+                    <h2 class="results-container__main__main-temperature">
+                        ---°C
+                    </h2>
+                    <div class="results-container__main__alt-temperatures">
+                        <h3 class="results-container__main__alt-temperatures__max-temp"><ion-icon name="arrow-up"></ion-icon>---°C</h3>
+                        <h3 class="results-container__main__alt-temperatures__min-temp"><ion-icon name="arrow-down"></ion-icon>---°C</h3>
+                    </div>
+                </div>
+                <div class="results-container__main__add-informations">
+                    <div class="results-container__main__add-informations__humidity-container">
+                        <ion-icon name="water-outline"></ion-icon>
+                        <span class="results-container__main__add-informations__humidity-container__info">
+                            <h1 class="results-container__main__add-informations__humidity-container__info__data">---%</h1>
+                            <h2 class="results-container__main__add-informations__humidity-container__info__title">Humidity</h2>
+                        </span>
+                    </div>
+                    <div class="results-container__main__add-informations__wind-speed-container">
+                        <ion-icon name="leaf-outline"></ion-icon>
+                        <span class="results-container__main__add-wind-speed-container__info">
+                            <h1 class="results-container__main__add-wind-speed-container__info__data">---Km/h</h1>
+                            <h2 class="results-container__main__add-wind-speed-container__info__title">wind</h2>
+                        </span>
+                    </div>
+                </div>
+            </main>
+            <ion-icon name="arrow-back" class="results-container__close-tab-button mode-changeable"></ion-icon>
+        </section>
+        <main class="search-container containers mode-changeable">
+            <h1 class="search-container__title">Weather <br>Together!</h1>
+            <img src="media/logo-picture.png" alt="weather-together-logo" class="search-container__logo-picture logos">
+            <p class="search-container__instructions">Search for a city.</p>
+            <div class="search-container__search-bar mode-changeable">
+                <label for="search-input">
+                    <ion-icon name="search"></ion-icon>
+                </label>
+                <input type="text" class="mode-changeable" name="" id="search-input" placeholder="Enter a city name..." autocomplete="off">
+            </div>
+            <ion-icon name="arrow-forward" class="search-container__submit-button mode-changeable"></ion-icon>
+        </main>
+    </div>
+    <footer class="footer">
+        <main class="footer__main">
+            <section class="footer__main__website footer__main__sections">
+                <img src="media/logo-picture.png" class="footer__main__website__logo">
+                <p class="footer__main__website__slogan">
+                    Weather Together!
+                </p>
+            </section>
+            <section class="footer__main__author footer__main__sections">
+                <h1 class="footer__main__author__name">
+                    João Gustavo
+                </h1>
+                <div class="footer__main__author__socials">
+                    <a href="https://github.com/Joa0Gustav0" class="footer__main__author__socials__ancors" target="_blank" rel="external">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="https://www.instagram.com/joa0.gustav0_dev/" class="footer__main__author__socials__ancors" target="_blank" rel="external">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </div>
+            </section>
+            <section class="footer__main__links footer__main__sections">
+                <h1>Links</h1>
+                <a href="#home" class="footer__main__links__a">
+                    Home
+                </a>
+            </section>
+        </main>
+        <section class="footer__rights">
+            &circledR; 2023 WEATHER TOGETHER. All Rights Reserved.
+        </section>
+    </footer>
+
+    <ion-icon name="contrast" class="page-mode-button"></ion-icon>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
